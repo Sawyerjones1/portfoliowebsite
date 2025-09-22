@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sawyer Jones - Home</title>
+    <title>Sawyer Jones - About</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
     <script src="https://kit.fontawesome.com/43e533d6db.js" crossorigin="anonymous"></script>
@@ -44,6 +44,7 @@
                 <span></span>
             </div>
             <div class="mm-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                 <li><a href="about.html" onclick="toggleMenu()">About</a></li>
                 <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
@@ -51,28 +52,46 @@
         </div>
     </nav> 
 </header>
-    <!--Main Content-->
+
+<!--Main Content-->
 <main>
-    <div class="content">
-        <section class="sec2">
-            <img src="assets/propic1.png" id="propic";>
-        </section>
-        <section class="sec1">
-            <br><br><br>
-            <h1 id="name">Sawyer Jones</h1>
-            <h3 id="title">Computer Science, Baltimore MD</h3><br>
-            <a href="contact.html" id="connect">
-            <button id="connect-button" title="Connect With Me" alt="Connect with me">
-                <i class="fa-solid fa-user-group fa-2x" style="color: #45cc2d;"></i>
-                    <span>Connect With Me</span>
-            </button>
-            </a>
-        </section>
-    </div>
+    <section class="about-sections" id="about-section">
+        <h1>About Me</h1>
+        <hr><br>
+        <p>Hello!</p><br> 
+        <p>My name is Sawyer Jones. I am a Compter Science student based in the Baltimore/Washington DC area. I am passionate about software development and cybersecurity. I plan to pursue a career in software engineering working in a full stack role.</p>
+        <br>
+        <p>I’m currently seeking a Summer 2026 internship in software engineering or a related field, where I can apply my skills and contribute to meaningful projects. </p><br>
+        <p>Outside of academics, I’m dedicated to growing through personal projects, which I’ll be showcasing on this website as they evolve—so stay tuned! Stay tuned!</p><br>
+        <p>If you’d like to connect, feel free to reach out via email or LinkedIn (you’ll find my info in the contact tab).</p><br>
+    </section>
+    <aside class="about-sections" id="about-aside">
+        <h1>Education</h1><hr><br>
+        <h4>Towson University: <span style="color: lightgrey">B.S. in Computer Science</span><h4><br>
+        <h4>Expected Graduation: <span style="color: lightgrey">Spring 2027</span></h4> <br>
+        <h4>GPA: <span style="color: lightgrey">3.5</span></h4> <br>
+        <h4>Involvement: <span style="color: lightgrey"><ul id="involvement">
+            <li>Cyber Defense Club</li>
+            <li>Data Science Culb</li>
+            <li>Software Engineering Club</li>
+        </ul></span></h4><br>
+        <h4>Languages: <span style="color: lightgrey"><ul id="involvement">
+            <li>Java</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+        </ul></span></h4><br>
+        <h4>Certifications: <span style="color: lightgrey">Comptia A+</span></h4> <br>
+        
+    </aside>
+
+
 </main>
 <!--Footer
 <footer>
-    <p>Copyright &#169; 2025 Sawyer Jones. All Rights Reserved</p> 
+   <p>Copyright &#169; 2025 Sawyer Jones. All Rights Reserved</p> 
 </footer>
 -->
     <!--js script-->

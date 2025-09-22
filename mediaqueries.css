@@ -9,9 +9,19 @@
     .sec1, .sec2{
         width: 100%;
     }}
+@media screen and (max-width:800px){
+        #about-article, #about-section, #about-aside{
+            width: 100%
+        }
+    }
+/* ANIMATIONS */
 @keyframes slide-in-from-right{
     from{transform: translateX(500px)}
 }
 @keyframes slide-in-from-left{
     from{transform: translateX(-500px)}
 }
+@keyframes grow{
+    50%{transform: scale(1.25, 1.25)}
+}
+

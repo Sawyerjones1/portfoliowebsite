@@ -23,13 +23,22 @@ main {
 }
 body{
     font-family: 'poppins', sans-serif;
-        background-color: #1c1c1c;
+    background-color: #1c1c1c;
 }
 html{
     scroll-behavior: smooth;
 }
 p {
-    color: rgb(85, 85, 85);
+    color: rgb(183, 183, 183);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+}
+footer p{
+    position:absolute;
+    bottom: 0px;
 }
 
 /* LOGO */
@@ -47,9 +56,7 @@ p {
 }
 
 /* TRANSITION */
-a, .btn{
-    transition: 100ms;
-}
+
 
 /* DESKTOP NAVIGATION */
 nav, .nav-links {
@@ -67,16 +74,20 @@ nav{
     list-style: none;
     font-style: 1.5rem;
 }
-a {
+.nav-links a {
     color: white;
     text-decoration: none;
     text-decoration-color: white;
 }
-a:hover {
-    color: #45cc2d;
+.nav-links a:hover {
+    color: grey;
     text-decoration: underline;
-    text-underline-offset: 15rem;
-    text-decoration-color: #45cc2d;
+    text-underline-offset: 1rem;
+    text-decoration-color: grey;
+}
+.nav-links a:active {
+    color: #85fe70;
+    text-decoration-color: #85fe70;
 }
 nav, .desktop-icons{
     display: flex;
@@ -88,28 +99,18 @@ nav, .desktop-icons{
     right: 1%;
     top: 5%;
 }
-#linkedin{
+.desktop-icons i{
     color: #45cc2d;
-    transition: color 0.3s ease;
 }
-#linkedin:hover{
+.desktop-icons i:hover{
     color: #85fe70;
-    cursor: pointer;
+    transform: translateY(-1px);
+    transition-duration:100ms;
 }
-#linkedin:active{
-    transform: translate(1px, 1px);
-}
-#github{
+.desktop-icons i:active{
     color: #45cc2d;
-    transition: color 0.3s ease;
 }
-#github:hover{
-    color: #85fe70;
-    cursor: pointer;
-}
-#github:active{
-    transform: translate(1px, 1px);
-}
+
 
 /* MOBILE NAVIGATION */
 #mobile-nav {
@@ -154,6 +155,10 @@ nav, .desktop-icons{
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
+.mm-links a:active {
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
 .mm-links li {
     list-style: none;    
 }
@@ -183,32 +188,35 @@ nav, .desktop-icons{
     transform: none;
 }
 
-/* Header CONTENT */
+/* HOME CONTENT */
 
-#email-button{
+#connect-button{
     display: flex;
     justify-content: center;
     align-items:center;    
-    width: 200px;
+    width: 220px;
     padding: 20px;
     margin: 20px auto; 
     background-color:#1c1c1c;
     color: white;
-    border: 1px solid #45CC2D;
+    border: 1px solid grey;
     border-radius: 25px;
     font-size: 1em;
     gap: 12px;
 }
-#email-button:hover{
+#connect-button:hover{
     background-color: #2c2c2c;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
 }
-#email-button:active{
-    border-color:black;
-    transform: translate(1px, 1px);
+#connect-button:active{
+    border: none;
+    transition: 100ms;
+}
+#connect{
+    text-decoration:none;
+}
 
-}
 .sec1{
     width: 50%;
     float: left;
@@ -235,10 +243,101 @@ nav, .desktop-icons{
 #propic {
     width: 70%;
     border-radius: 50%;
-
     object-fit: cover;
 }
 
 .content{
 
+}
+
+/* CONTACT CONTENT */
+.contact-content-box{
+    font-size: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    padding: 25px;
+    
+}
+#cc-title{
+    padding: 10px;
+    text-align: center;
+    color: lightgrey;
+    animation-name: slide-in-from-left;
+    animation-duration: 300ms;
+}
+#cc-email{
+    animation-name: slide-in-from-right;
+    animation-duration: 300ms;
+}
+#cc-linkedin{
+    animation-name: slide-in-from-left;
+    animation-duration: 300ms;
+}
+#cc-github{
+    animation-name: slide-in-from-right;
+    animation-duration: 300ms;
+}
+.cc-buttons{
+    display: flex;
+    align-items:center;    
+    width: 300px;
+    padding: 5px;
+    margin: 20px auto auto; 
+    background-color:#1c1c1c;
+    color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-size: 120%;
+    gap: 40px;
+}
+.cc-buttons:hover{
+    cursor: pointer;
+    background-color: #2c2c2c;
+}
+.cc-buttons:active{
+    border: none;
+}
+
+/* ABOUT CONTENT */
+#about-aside{
+    width: 30%;
+    float: left;
+    padding:30px;
+    animation-name: slide-in-from-right;
+    animation-duration: 300ms;
+}
+#about-section{
+    width: 70%;
+    float: left;
+    padding:30px;
+    animation-name: slide-in-from-left;
+    animation-duration: 300ms;
+}
+#about-article{
+    width: 0%;
+    float: right;
+    padding:30px;
+}
+.about-sections h2{
+    color: white;
+    /*text-decoration:underline;
+    text-underline-offset: .4rem;*/
+}
+
+.about-sections{
+    color:grey;
+    margin-top: 15px;
+}
+#involvement{
+    list-style: circle;
+    padding-left: 30px;
+}
+
+/* PROJECT CONTENT */
+#coming-soon{
+    text-align: center;
+    animation-name: grow;
+    animation-duration: 1s;
+    animation
 }
