@@ -246,10 +246,6 @@ nav, .desktop-icons{
     object-fit: cover;
 }
 
-.content{
-
-}
-
 /* CONTACT CONTENT */
 .contact-content-box{
     font-size: 20px;
@@ -269,6 +265,7 @@ nav, .desktop-icons{
 #cc-email{
     animation-name: slide-in-from-right;
     animation-duration: 300ms;
+    text-decoration: none;
 }
 #cc-linkedin{
     animation-name: slide-in-from-left;
@@ -290,6 +287,7 @@ nav, .desktop-icons{
     border-radius: 20px;
     font-size: 120%;
     gap: 40px;
+    
 }
 .cc-buttons:hover{
     cursor: pointer;
@@ -297,6 +295,9 @@ nav, .desktop-icons{
 }
 .cc-buttons:active{
     border: none;
+}
+.ccbuttons{
+    text-decoration:none;
 }
 
 /* ABOUT CONTENT */
@@ -339,5 +340,4 @@ nav, .desktop-icons{
     text-align: center;
     animation-name: grow;
     animation-duration: 1s;
-    animation
 }
