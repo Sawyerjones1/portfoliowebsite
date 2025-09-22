@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawyer Jones</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="https://kit.fontawesome.com/43e533d6db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Header-->
+<header>
+    <!--Desktop Navigation-->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="assets/logo2.png" id="logo1">
+        </div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>            
+        </div>
+        <div>
+            <ul class = "desktop-icons">
+                <li><i id="github" class="fa-brands fa-github fa-3x"></i></li>
+                <li><i id="linkedin" class="fa-brands fa-linkedin fa-3x"></i></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Mobile Navigation-->
+    <nav id="mobile-nav">
+        <div class="logo">
+            <img src="assets/logo2.png" alt="Sawyer Jones Picture" id="logo1">
+        </div>
+        <div class="mobile-menu">
+            <div class="mm-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mm-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav> 
+    <div class="content">
+
+        <section class="sec2">
+            <img src="assets/fumdown.png" id="propic";>
+        </section>
+        <section class="sec1">
+            <br><br><br>
+            <h1 id="name">Sawyer Jones</h1>
+            <h3 id="title">Computer Science, Baltimore MD</h3><br>
+            <button id="email-button">
+                    <i class="fa-solid fa-envelope fa-2x" style="color: #45cc2d;"></i>
+                    <span>Email Me</span>
+            </button>
+        </section>
+    </div>
+</header>
+    <!--main-->
+<main>
+
+</main>
+
+    <!--js script-->
+    <script src="script.js"></script>    
+</body>
+</html>

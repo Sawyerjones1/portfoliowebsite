@@ -1,0 +1,17 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }}
+@media screen and (max-width:1200px){
+    .sec1, .sec2{
+        width: 100%;
+    }}
+@keyframes slide-in-from-right{
+    from{transform: translateX(500px)}
+}
+@keyframes slide-in-from-left{
+    from{transform: translateX(-500px)}
+}
